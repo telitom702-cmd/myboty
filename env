@@ -1,9 +1,8 @@
-MONGO_URI=mongodb+srv://sushankm16:4i1WAfPYKWyqPIDD@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority
-TOKEN=8534427928:AAEeOKXj4L8bpkvw2FiOcwuQiPdwR5c9aOg
+MONGO_URI=mongodb+srv://username:password@cluster0.sngp9pz.mongodb.net/?retryWrites=true&w=majority
+TOKEN=your_new_token_here
 OWNER_ID=5828992083
 LOGGER_ID=-1003842081443
 FSUB_IDS=-1003671821862
-# Optional
 SECRET_TOKEN=
 WEBHOOK_URL=
-PORT=
+PORT=10000
