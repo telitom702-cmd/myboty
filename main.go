@@ -67,7 +67,6 @@ if err != nil {
 
 FSubIds = []int64{fsubid}
 
-	FSubIds = append(FSubIds, fsubids)
 	MongoDBURI = os.Getenv("MONGO_URI")
 
 	secretToken = os.Getenv("SECRET_TOKEN")
