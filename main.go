@@ -55,10 +55,17 @@ func main() {
 		log.Fatal("LOGGER_ID is not set")
 	}
 
-	fsubids, err := strconv.ParseInt(os.Getenv("FSUB_IDS"), 10, 64)
-	if err != nil {
-		log.Fatal("FSUB_IDS is not set")
-	}
+	fs := os.Getenv("FSUB_IDS")
+if fs == "" {
+	log.Fatal("FSUB_IDS is not set")
+}
+
+fsubid, err := strconv.ParseInt(fs, 10, 64)
+if err != nil {
+	log.Fatal("FSUB_IDS invalid format")
+}
+
+FSubIds = []int64{fsubid}
 
 	FSubIds = append(FSubIds, fsubids)
 	MongoDBURI = os.Getenv("MONGO_URI")
